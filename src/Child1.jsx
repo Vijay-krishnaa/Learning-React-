@@ -3,20 +3,23 @@ import React, { Component } from "react";
 export class Child1 extends Component {
   constructor() {
     super();
-    this.count = 0;
+    this.state = { count: 0 };
   }
+
   increment = () => {
-    this.count = this.count + 1;
+    this.setState({ count: this.state.count + 1 });
   };
+
   decrement = () => {
-    this.count = this.count - 1;
+    this.setState({ count: this.state.count - 1 });
   };
+
   render() {
     return (
       <>
-        <button onClick={this.increment}></button>
-        <b>{this.count}</b>
-        <button onClick={this.decrement}></button>
+        <button onClick={this.increment}>Increment</button>
+        <b> {this.state.count}</b>
+        <button onClick={this.decrement}>Decrement</button>
       </>
     );
   }
