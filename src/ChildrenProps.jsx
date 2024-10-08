@@ -6,7 +6,7 @@ function ChildrenProps(props) {
       <h1>{props.data}</h1>
 
       {props.children.map((ele) => {
-        return <h1> {ele}</h1>;
+        return <h1>key={ele}</h1>;
       })}
     </>
   );
