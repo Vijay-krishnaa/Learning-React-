@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import FunctionProps from "./FunctionProps";
+import ClassProps from "./ClassProps";
+import ChildrenProps from "./ChildrenProps";
 
 function App() {
+  const user = {
+    name: "vijay",
+    age: 23,
+    gender: "male",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FunctionProps props={user} />
+      <ClassProps props ={user} />
+      <ChildrenProps data = {"my name is khan"}/>
+      <ChildrenProps>
+{"hello Jsiper"}
+{2000}
+{"happy Diwali"}
+
+      </ChildrenProps>
+    </>
   );
 }
 
