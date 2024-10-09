@@ -12,6 +12,7 @@ export class Child1 extends Component {
 
   decrement = () => {
     this.setState({ count: this.state.count - 1 });
+    console.log(this.setState);
   };
 
   render() {
