@@ -4,7 +4,8 @@ import ClassProps from "./ClassProps";
 import ChiltToParent from "./ChiltToParent";
 import Child1 from "./Child1";
 import Child2 from "./Child2";
-
+import Form1 from "./Form1";
+import Form2 from "./Form2";
 function App() {
   const user = {
     name: "vijay",
@@ -28,6 +29,9 @@ function sendData(x){
       <ChiltToParent  name = {name} sendData = {sendData}/>
       <Child1 />
       <Child2 />
+      <Form1 />
+      <Form2 />
+
       
       
     </>
